@@ -5,7 +5,7 @@
 name = 'Jhon Smith'
 age = 20
 is_newpatient = True
-print(name,age,is_newpatient)
+print(name,age,is_newpatient) 
 
 #Taking input from user
 name1 =  input('What is your name? ')
