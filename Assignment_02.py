@@ -50,3 +50,11 @@ print(numbers)
 words = ["Python", "is", "a", "great", "programming", "language"]
 print(words[1:4:1])
 print(words[::-1])
+
+str = "apple,banana,orange"
+fruits = str.split(",")#Comes inside bracket in list seperated by comma.
+print(fruits)
+
+my_list = [1,2,3]
+new_list = my_list*3 # 1,2,3  comes in three times
+print(new_list)
