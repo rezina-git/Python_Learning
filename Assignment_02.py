@@ -58,3 +58,11 @@ print(fruits)
 my_list = [1,2,3]
 new_list = my_list*3 # 1,2,3  comes in three times
 print(new_list)
+
+#mutable= Original data changeable
+#EG: Change value of 2 to Hi
+my_list[1]="Hi"
+print(my_list)
+#String is immutable so there we use replace but list is mutable so indexwise value is repalced.
+
+
