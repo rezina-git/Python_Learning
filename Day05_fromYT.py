@@ -12,3 +12,14 @@ print("Age=", age)
 print("Marks=",marks)
 
 #Ex2: WAP to input the side of square and print its area.
+side = int(input("Enter one side of square:"))
+side *=side
+print("The area of square is:",side)
+#Ex3: WAP to input 2 floating point numbers and print their average.
+f1 = float(input("Enter the first number:"))
+f2 = float(input("Enter the second:"))
+print("Average is :",(f1 + f2)/2)
+#Ex 4: WAP to input 2 int numbers, a snd b.Print True if a is greater than or equal to b.If not print false.
+a = int(input("Enter fist num:"))
+b = int (input("Enter the second num:"))
+print(a>=b)
