@@ -16,20 +16,20 @@ print(movies)
 
 #WAp to check if a list  contains a palindrome of elements.(Hint: Use copy()Method )
 #Examples [1,2,3,2,1] or [1,"abc","abc",1]
-list = [1,2,3,2,1]
-copy_list= list.copy() 
-copy_list.reverse()
+list1 = [1,2,3,2,1]
+copy_list1= list1.copy() 
+copy_list1.reverse()
 
-if(copy_list == list):
+if(copy_list1 == list1):
     print("It is palindrome NUmber")
 else:
     print("Not a palindrome")
 
-list = ["m","a","a","m"]
-copy_list= list.copy() 
-copy_list.reverse()
+list1 = ["m","a","a","m"]
+copy_list1= list1.copy() 
+copy_list1.reverse()
 
-if(copy_list == list):
+if(copy_list1 == list1):
     print("It is palindrome")
 else:
     print("Not a palindrome")
@@ -49,3 +49,58 @@ print(num.count("A"))
 Grade = ["C","D","A","A","B","B","A"]
 Grade.sort()
 print(Grade)
+
+#Dictionary in python
+#Used to store data values in key:Value pairs.
+#keys are not repeated but values can be.
+info = {
+    "key": "value",
+    "name": "Kankai",
+    "Learning": "School",
+    "age":"34",
+    "is_adult": True,
+    "12.9" :"12.9",
+    "topics":("dict","set"),
+    "marks":[95,87,98]
+}
+# print(info)
+# print(type(info))
+
+info["name"]= "Reji"
+info["Surname"] = "Budhathoki"
+print(info)
+#To print empty dictionary
+null_dict ={}
+print(null_dict)
+
+#nested dictionaries
+student = {
+    "name": "Sanjay",
+    "Subjects": {
+        "phy": 87,
+        "Chem": 98,
+        "Math": 95
+    }  
+}
+print(student)
+print(student["Subjects"])
+print(student["Subjects"]["Chem"])
+
+#Dictionary Methods
+#1.To print all the keys:
+print(list(student.keys()))
+#To print numbers of keys
+print(len(student))
+#or
+print(len(list(student.keys())))
+#2.dict.values--> Prints all values
+print(student.values())
+print(list(student.values()))
+#3.dict.items()--->Returns all (key,values) pairs as tuples.
+print(student.items())
+print(list(student.items()))
+#To Access these values  of list individually:
+pairs = list(student.items())
+print(pairs[0])
+#4.dict.get("key")--->Returns the key according to value.
+#This is more suitable way to write than above one and industry oriented.
