@@ -87,20 +87,40 @@ print(student["Subjects"])
 print(student["Subjects"]["Chem"])
 
 #Dictionary Methods
+
 #1.To print all the keys:
 print(list(student.keys()))
 #To print numbers of keys
 print(len(student))
 #or
 print(len(list(student.keys())))
+
 #2.dict.values--> Prints all values
 print(student.values())
 print(list(student.values()))
+
 #3.dict.items()--->Returns all (key,values) pairs as tuples.
 print(student.items())
 print(list(student.items()))
 #To Access these values  of list individually:
 pairs = list(student.items())
 print(pairs[0])
+
 #4.dict.get("key")--->Returns the key according to value.
 #This is more suitable way to write than above one and industry oriented.
+#Difference is you can see in output.
+# print(student["name2"])#This gives error for all the code below this as there is no name2 variable BUT...
+print(student.get("name2"))#This give no error--->Gives none value.
+
+#5.mydict.update(newDict)--->Insert the specified items to the dictionary.
+#. To add city in below student dictionary:
+student = {
+    "name": "Sanjay",
+    "Subjects": {
+        "phy": 87,
+        "Chem": 98,
+        "Math": 95
+    }  
+}
+student.update({"name": "Sandesh","City" : "Kathmandu"})
+print(student)
