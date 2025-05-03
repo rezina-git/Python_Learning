@@ -30,3 +30,19 @@ for nums in list:
         print("Number found at idx", idx)
     idx += 1
 
+#range()
+#Range functions returns a sequence of numbers,starting from 0 by default ,and increments by 1 (by default) and stops before a specified number. 
+seq = range(5)
+
+for i in seq:
+    print(i)
+    
+for i in range (2,10,2): #range (start,stop,step)
+    print(i)
+    
+#To print even number from 1 to 10 
+for a in range(2, 100,2):
+ print(a)
+#To print Odd:
+for i in range (1, 100, 2):
+    print(i)
