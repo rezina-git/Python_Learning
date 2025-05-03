@@ -81,3 +81,16 @@ while (i <= M):
     fact *= i
     i += 1
 print("factorial =", fact)
+
+#Multiplication table  Print this using while loop
+#2*1
+#2*2
+#2*10
+
+num = int(input("Enter the number:"))
+i = 1
+while(i<=10):
+    print(f" {num} x {i}= {num*i}" )
+    i+= 1
+
+#Control statements 
