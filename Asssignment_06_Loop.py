@@ -22,14 +22,12 @@
 
 # Write a program to calculate the sum of all odd numbers between 1 and 30 using a while loop.
 
-
+#--------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 #1. Write a program to print the squares of numbers from 1 to 10 using a for loop.
-
-
 for sq in range(1,11,1):
     print(f"{sq}*{sq} = {sq} *{sq}")
  
-#OR---->
+#OR---->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 for i in range (1,11,1):
     s = i*i
@@ -87,3 +85,31 @@ while a>=1:
     print(a)
     a-=1
 
+# Write a program that keeps taking input from the user and stops only when the user types "stop".
+# while True:
+#     a = input("Write Something here:")
+#     if a == "stops":
+#         break
+
+# Write a program to print the multiplication table of 5 using a while loop.
+b = 5
+i = 1
+
+while i<=10:
+    print(f"{b}*{i}={b*i}")
+    i+=1
+
+# Write a program to print the square of numbers from 1 to 10 using a while loop.
+i = 1 
+while i <=10:
+    print((f"The square of {i}={i*i}"))
+    i+=1
+
+# Write a program to calculate the sum of all odd numbers between 1 and 30 using a while loop.
+
+total = 0
+i = 1
+while i <= 30:
+    total += i
+    i+= 2
+print(f"Sum of all odd numbers from 1 t0 30 ={total}")
