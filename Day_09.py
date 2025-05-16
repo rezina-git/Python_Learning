@@ -52,5 +52,4 @@ cal_prod(2)
 # def cal_prod(a=3, b):#Error
 #     print(a*b)
 #     return a*b
-
 # cal_prod(2) 
