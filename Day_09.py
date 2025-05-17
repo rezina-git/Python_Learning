@@ -52,4 +52,23 @@ cal_prod(2)
 # def cal_prod(a=3, b):#Error
 #     print(a*b)
 #     return a*b
-# cal_prod(2) 
+# cal_prod(2)
+
+
+#------> Recursive Function------->
+#Function that calls itself.
+#Recursive function
+
+def show(n):
+    if(n==0):#---->Base Case
+        return
+    print(n)
+    show(n-1)
+show(5)
+
+def show(n):
+    if(n==-1):#---->Base Case
+        return
+    print(n)
+    show(n-1)
+show(5)
